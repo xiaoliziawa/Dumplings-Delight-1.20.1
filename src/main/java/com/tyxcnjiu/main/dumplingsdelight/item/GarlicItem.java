@@ -15,6 +15,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import vectorwing.farmersdelight.common.utility.TextUtils;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -90,11 +91,7 @@ public class GarlicItem extends BlockItem {
         }
 
         if (this.hasFoodEffectTooltip) {
-            addFoodEffectTooltip(stack, tooltip, 1.0F);
+            TextUtils.addFoodEffectTooltip(stack, tooltip, 1.0F);
         }
-    }
-
-    private void addFoodEffectTooltip(ItemStack stack, List<Component> tooltip, float duration) {
-        tooltip.add(Component.translatable("tooltip.garlic_effect").withStyle(ChatFormatting.YELLOW));
     }
 }

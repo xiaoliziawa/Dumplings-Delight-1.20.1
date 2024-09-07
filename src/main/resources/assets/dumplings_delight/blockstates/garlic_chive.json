@@ -23,7 +23,6 @@
     },
     "age=7": {
       "model": "dumplings_delight:block/garlic_chive_stage3"
-    },
-    "render_type": "cutout"
+    }
   }
 }

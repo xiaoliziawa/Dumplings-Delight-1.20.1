@@ -23,7 +23,6 @@
     },
     "age=7": {
       "model": "dumplings_delight:block/eggplant_stage4"
-    },
-    "render_type": "cutout"
+    }
   }
 }
