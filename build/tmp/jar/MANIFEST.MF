@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: dumplings_delight
+Specification-Vendor: TYX_CnJiu
+Specification-Version: 1
+Implementation-Title: DumplingsDelight
+Implementation-Version: 0.1
+Implementation-Vendor: TYX_CnJiu
+Implementation-Timestamp: 2024-09-07T12:04:00+0800
+
