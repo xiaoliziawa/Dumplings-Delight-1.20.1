@@ -51,5 +51,6 @@
   "dumplings_delight.advancement.get_pufferfish_boiled_dumpling": "小心为上",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling.desc": "吃一个蒲公英饺子",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling": "苦！",
-  "effect.dumplings_delight.garlic": "大蒜"
+  "effect.dumplings_delight.garlic": "大蒜",
+  "effect.dumplings_delight.garlic.description": "使饺子稍微更有营养"
 }

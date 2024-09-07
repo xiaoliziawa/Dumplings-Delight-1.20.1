@@ -119,7 +119,6 @@
     "facing=east,servings=7": {
       "model": "dumplings_delight:block/dumpling_medley_stage7",
       "y": 90
-    },
-    "render_type": "cutout"
+    }
   }
 }

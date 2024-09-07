@@ -13,7 +13,7 @@
   "item.dumplings_delight.vinegar": "Vinegar",
   "item.dumplings_delight.fungus_boiled_dumpling": "Fungus Boiled Dumpling",
   "item.dumplings_delight.dandelion_leaf_boiled_dumpling": "Dandelion Leaf Boiled Dumpling",
-  "item.dumplings_delight.calamari_boiled_dumpling": "Pork Celery Boiled Dumpling",
+  "item.dumplings_delight.calamari_boiled_dumpling": "Calamari Boiled Dumpling",
   "item.dumplings_delight.chicken_mushroom_boiled_dumpling": "Chicken Mushroom Boiled Dumpling",
   "item.dumplings_delight.pork_celery_boiled_dumpling": "Pork Celery Boiled Dumpling",
   "item.dumplings_delight.pork_mushroom_wonton": "Pork Mushroom Wonton",
@@ -44,12 +44,13 @@
   "block.dumplings_delight.fennel_crate": "Fennel Crate",
   "block.dumplings_delight.dumpling_medley": "Dumpling Medley",
   "dumplings_delight.advancement.root": "Dumpling's Delight",
-  "dumplings_delight.advancement.root.desc": "As the saying gose, \"There's nothing more delicious than dumplings!\"",
-  "dumplings_delight.advancement.consume_dumpling.desc": "Eat any kind of dumplings",
+  "dumplings_delight.advancement.root.desc": "As the saying goes, \"There's nothing more delicious than dumplings!\"",
+  "dumplings_delight.advancement.consume_dumpling.desc": "Eat any kind of dumpling",
   "dumplings_delight.advancement.consume_dumpling": "It's time to eat dumplings!",
   "dumplings_delight.advancement.get_pufferfish_boiled_dumpling.desc": "Get a pufferfish boiled dumpling",
   "dumplings_delight.advancement.get_pufferfish_boiled_dumpling": "Be careful",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling.desc": "Eat a dandelion leaf boiled dumpling",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling": "It's bitter!",
-  "effect.dumplings_delight.garlic": "Garlic"
+  "effect.dumplings_delight.garlic": "Garlic",
+  "effect.dumplings_delight.garlic.description": "Makes dumplings slightly more nourishing"
 }
