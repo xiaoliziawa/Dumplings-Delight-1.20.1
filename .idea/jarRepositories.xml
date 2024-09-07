@@ -14,12 +14,7 @@
     <remote-repository>
       <option name="id" value="maven" />
       <option name="name" value="maven" />
-      <option name="url" value="https://maven.minecraftforge.net/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven2" />
-      <option name="name" value="maven2" />
-      <option name="url" value="https://libraries.minecraft.net/" />
+      <option name="url" value="https://cursemaven.com" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="MavenRepo" />
@@ -27,9 +22,19 @@
       <option name="url" value="https://repo.maven.apache.org/maven2/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="maven" />
-      <option name="name" value="maven" />
-      <option name="url" value="https://cursemaven.com" />
+      <option name="id" value="aliyunRepo" />
+      <option name="name" value="aliyunRepo" />
+      <option name="url" value="https://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://maven.minecraftforge.net/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven3" />
+      <option name="name" value="maven3" />
+      <option name="url" value="https://libraries.minecraft.net/" />
     </remote-repository>
   </component>
 </project>

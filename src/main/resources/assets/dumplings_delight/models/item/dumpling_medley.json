@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "dumplings_delight:items/dumpling_medley"
+    "layer0": "dumplings_delight:item/dumpling_medley"
   }
 }
