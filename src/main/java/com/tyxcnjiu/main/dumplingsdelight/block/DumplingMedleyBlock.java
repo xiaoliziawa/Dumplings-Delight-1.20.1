@@ -138,7 +138,7 @@ public class DumplingMedleyBlock extends Block {
 
     @Override
     public boolean canSurvive(BlockState state, LevelReader worldIn, BlockPos pos) {
-        return worldIn.getBlockState(pos.below()).isSolid();
+        return worldIn.getBlockState(pos.below()).getMaterial().isSolid();
     }
 
 

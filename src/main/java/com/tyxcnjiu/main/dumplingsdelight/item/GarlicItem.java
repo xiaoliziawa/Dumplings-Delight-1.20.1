@@ -17,7 +17,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import vectorwing.farmersdelight.common.utility.TextUtils;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class GarlicItem extends BlockItem {
@@ -84,7 +83,7 @@ public class GarlicItem extends BlockItem {
 
     @OnlyIn(Dist.CLIENT)
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flagIn) {
+    public void appendHoverText(ItemStack stack,  Level level, List<Component> tooltip, TooltipFlag flagIn) {
         if (this.hasCustomTooltip) {
             Component textEmpty = Component.translatable("tooltip." + this.getDescriptionId());
             tooltip.add((Component) textEmpty.getStyle().withColor(ChatFormatting.BLUE));

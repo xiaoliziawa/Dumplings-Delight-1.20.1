@@ -20,7 +20,7 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": "#dumplings_delight:dumpling"
+          "tag": "dumplings_delight:dumpling"
         }
       }
     }

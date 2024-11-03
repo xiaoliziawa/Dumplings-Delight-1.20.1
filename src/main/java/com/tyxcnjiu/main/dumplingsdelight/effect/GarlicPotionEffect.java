@@ -1,7 +1,8 @@
 package com.tyxcnjiu.main.dumplingsdelight.effect;
 
+import com.tyxcnjiu.main.dumplingsdelight.DumplingsDelight;
 import com.tyxcnjiu.main.dumplingsdelight.registry.EffectRegistry;
-import net.minecraft.core.registries.Registries;
+import net.minecraft.core.Registry;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -12,10 +13,9 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.Level;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -26,86 +26,48 @@ public class GarlicPotionEffect extends MobEffect {
         super(MobEffectCategory.BENEFICIAL, -4476269);
     }
 
-    public static class StartEat {
-        @Mod.EventBusSubscriber
-        private static class GlobalTrigger {
-            @SubscribeEvent
-            public static void onUseItemStart(LivingEntityUseItemEvent.Start event) {
-                if (event != null && event.getEntity() != null) {
-                    Entity entity = event.getEntity();
-                    double i = entity.getX();
-                    double j = entity.getY();
-                    double k = entity.getZ();
-                    double duration = event.getDuration();
-                    ItemStack itemstack = event.getItem();
-                    Level world = entity.level();
-                    Map<String, Object> dependencies = new HashMap<>();
-                    dependencies.put("x", i);
-                    dependencies.put("y", j);
-                    dependencies.put("z", k);
-                    dependencies.put("itemstack", itemstack);
-                    dependencies.put("duration", duration);
-                    dependencies.put("world", world);
-                    dependencies.put("entity", entity);
-                    dependencies.put("event", event);
-                    isDumpling(dependencies);
-                }
-            }
-
-            private static boolean isDumpling(Map<String, Object> dependencies) {
-                ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-                TagKey<Item> dumplingTag = TagKey.create(Registries.ITEM, new ResourceLocation("dumplings_delight:dumpling"));
-                return itemstack.is(dumplingTag);
-            }
-
+    @Mod.EventBusSubscriber(modid = DumplingsDelight.MOD_ID)
+    public static class EventHandler {
+        private static boolean isDumpling(ItemStack itemstack) {
+            TagKey<Item> dumplingTag = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("dumplings_delight:dumpling"));
+            return itemstack.is(dumplingTag);
         }
-    }
 
-    public static class Finish {
-        @Mod.EventBusSubscriber
-        private static class GlobalTrigger {
-            @SubscribeEvent
-            public static void onUseItemStart(LivingEntityUseItemEvent.Finish event) {
-                if (event != null && event.getEntity() != null) {
-                    Entity entity = event.getEntity();
-                    double i = entity.getX();
-                    double j = entity.getY();
-                    double k = entity.getZ();
-                    double duration = event.getDuration();
-                    ItemStack itemstack = event.getItem();
-                    Level world = entity.level();
-                    Map<String, Object> dependencies = new HashMap<>();
-                    dependencies.put("x", i);
-                    dependencies.put("y", j);
-                    dependencies.put("z", k);
-                    dependencies.put("itemstack", itemstack);
-                    dependencies.put("duration", duration);
-                    dependencies.put("world", world);
-                    dependencies.put("entity", entity);
-                    dependencies.put("event", event);
-                    WithGarlicPotion(dependencies);
+        @SubscribeEvent
+        public static void onUseItemStart(LivingEntityUseItemEvent.Start event) {
+            if (event != null && event.getEntity() != null) {
+                Entity entity = event.getEntity();
+                ItemStack itemstack = event.getItem();
+                if (isDumpling(itemstack)) {
+                    // 可以在这里添加开始使用饺子时的逻辑
                 }
             }
+        }
 
-            public static void WithGarlicPotion(Map<String, Object> dependencies) {
-                Entity entity = (Entity) dependencies.get("entity");
-                ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-                if (GarlicPotionEffect.StartEat.GlobalTrigger.isDumpling(dependencies) && new Object() {
-                    boolean check(Entity _entity) {
-                        if (_entity instanceof LivingEntity) {
-                            Collection<MobEffectInstance> effects = ((LivingEntity) _entity).getActiveEffects();
-                            for (MobEffectInstance effect : effects) {
-                                if (effect.getEffect() == EffectRegistry.Garlic.get())
-                                    return true;
-                            }
-                        }
-                        return false;
-                    }
-                }.check(entity)) {
-                    if (entity instanceof Player player)
+        @SubscribeEvent
+        public static void onUseItemFinish(LivingEntityUseItemEvent.Finish event) {
+            if (event != null && event.getEntity() != null) {
+                Entity entity = event.getEntity();
+                ItemStack itemstack = event.getItem();
+                
+                if (isDumpling(itemstack) && hasGarlicEffect(entity)) {
+                    if (entity instanceof Player player) {
                         player.getFoodData().setFoodLevel(player.getFoodData().getFoodLevel() + 1);
+                    }
                 }
             }
+        }
+
+        private static boolean hasGarlicEffect(Entity entity) {
+            if (entity instanceof LivingEntity living) {
+                Collection<MobEffectInstance> effects = living.getActiveEffects();
+                for (MobEffectInstance effect : effects) {
+                    if (effect.getEffect() == EffectRegistry.Garlic.get()) {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
     }
 
