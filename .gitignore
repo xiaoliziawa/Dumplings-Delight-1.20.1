@@ -1,3 +1,6 @@
 /build/
 /run/
 /.gradle/
+/.idea/
+/bin/
+/.xcodemap/config/xcodemap-class-filter.yaml
