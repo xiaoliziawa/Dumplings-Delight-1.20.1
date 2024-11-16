@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "crop": "dumplings_delight:block/garlic_chive_stage1"
-  }
-}
