@@ -1,6 +1,7 @@
 package com.tyxcnjiu.main.dumplingsdelight.block;
 
 import com.tyxcnjiu.main.dumplingsdelight.registry.ItemRegistry;
+import com.tyxcnjiu.main.dumplingsdelight.registry.BlockRegistry;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -29,6 +30,11 @@ public class GreenOnionBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
         return ItemRegistry.GreenOnion.get();
+    }
+
+    @Override
+    public BlockState getPlant(BlockGetter world, BlockPos pos) {
+        return BlockRegistry.GreenOnion.get().defaultBlockState();
     }
 
     @Override

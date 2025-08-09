@@ -37,7 +37,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> ChineseCabbage = ITEMS.register("chinese_cabbage",
             ()-> new Item(new Item.Properties().food(FoodList.ChineseCabbage)));
     public static final RegistryObject<Item> ChineseCabbageSeeds = ITEMS.register("chinese_cabbage_seeds",
-            ()-> new BlockItem(BlockRegistry.ChineseCabbages.get(), new Item.Properties()));
+            ()-> new ItemNameBlockItem(BlockRegistry.ChineseCabbages.get(), new Item.Properties()));
     public static final RegistryObject<Item> ChineseCabbageLeaf = ITEMS.register("chinese_cabbage_leaf",
             ()-> new Item(new Item.Properties().food(FoodList.ChineseCabbageLeaf)));
     public static final RegistryObject<Item> Garlic = ITEMS.register("garlic",
@@ -49,15 +49,15 @@ public class ItemRegistry {
     public static final RegistryObject<Item> Eggplant = ITEMS.register("eggplant",
             ()-> new Item(new Item.Properties().food(FoodList.Eggplant)));
     public static final RegistryObject<Item> EggplantSeeds = ITEMS.register("eggplant_seeds",
-            ()-> new BlockItem(BlockRegistry.Eggplant.get(), new Item.Properties()));
+            ()-> new ItemNameBlockItem(BlockRegistry.Eggplant.get(), new Item.Properties()));
     public static final RegistryObject<Item> GarlicChive = ITEMS.register("garlic_chive",
             ()-> new Item(new Item.Properties().food(FoodList.GarlicChive)));
     public static final RegistryObject<Item> GarlicChiveSeeds = ITEMS.register("garlic_chive_seeds",
-            ()-> new BlockItem(BlockRegistry.GarlicChive.get(), new Item.Properties()));
+            ()-> new ItemNameBlockItem(BlockRegistry.GarlicChive.get(), new Item.Properties()));
     public static final RegistryObject<Item> Fennel = ITEMS.register("fennel",
             ()-> new Item(new Item.Properties().food(FoodList.Fennel)));
     public static final RegistryObject<Item> FennelSeeds = ITEMS.register("fennel_seeds",
-            ()-> new BlockItem(BlockRegistry.Fennel.get(), new Item.Properties()));
+            ()-> new ItemNameBlockItem(BlockRegistry.Fennel.get(), new Item.Properties()));
     //Dumplings
     public static final RegistryObject<Item> PorkCabbageBoiledDumpling = ITEMS.register("pork_cabbage_boiled_dumpling",
             () -> new Item(new Item.Properties().food(FoodList.PorkCabbageBoiledDumpling)));
