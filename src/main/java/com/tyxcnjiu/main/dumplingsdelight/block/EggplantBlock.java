@@ -20,6 +20,7 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.BushBlock;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -33,7 +34,7 @@ import net.minecraftforge.common.PlantType;
 import net.minecraftforge.event.ForgeEventFactory;
 import vectorwing.farmersdelight.common.registry.ModSounds;
 
-public class EggplantBlock extends BushBlock implements BonemealableBlock, IPlantable {
+public class EggplantBlock extends CropBlock {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
     private static final int EGGPLANT_BEARING_AGE = 7;
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{

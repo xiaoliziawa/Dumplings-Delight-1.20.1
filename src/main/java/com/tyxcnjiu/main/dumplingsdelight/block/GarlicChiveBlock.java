@@ -1,5 +1,6 @@
 package com.tyxcnjiu.main.dumplingsdelight.block;
 
+import com.tyxcnjiu.main.dumplingsdelight.registry.BlockRegistry;
 import com.tyxcnjiu.main.dumplingsdelight.registry.ItemRegistry;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
@@ -31,6 +32,10 @@ public class GarlicChiveBlock extends CropBlock {
         return ItemRegistry.GarlicChiveSeeds.get();
     }
 
+    @Override
+    public BlockState getPlant(BlockGetter world, BlockPos pos) {
+        return BlockRegistry.Fennel.get().defaultBlockState();
+    }
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
         return SHAPE_BY_AGE[state.getValue(this.getAgeProperty())];

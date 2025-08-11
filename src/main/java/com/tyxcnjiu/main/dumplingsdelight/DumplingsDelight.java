@@ -45,8 +45,6 @@ public class DumplingsDelight {
 
     public DumplingsDelight() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        // 注册所有注册表
         ItemRegistry.ITEMS.register(modEventBus);
         BlockRegistry.BLOCKS.register(modEventBus);
         EffectRegistry.EFFECTS.register(modEventBus);

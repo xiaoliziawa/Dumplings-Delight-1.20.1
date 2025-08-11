@@ -90,6 +90,7 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     implementation fg.deobf("curse.maven:farmers-delight-398521:5051241")
+    runtimeOnly fg.deobf("curse.maven:TLM-355044:6440564")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     runtimeOnly fg.deobf("curse.maven:jei-238222:5846858")
 }
