@@ -1,0 +1,211 @@
+{
+  "display": {
+    "icon": {
+      "item": "dumplings_delight:dumpling_medley"
+    },
+    "title": {
+      "translate": "dumplings_delight.advancement.dumpling_king"
+    },
+    "description": {
+      "translate": "dumplings_delight.advancement.dumpling_king.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "dumplings_delight:root",
+  "criteria": {
+    "pork_cabbage_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:pork_cabbage_boiled_dumpling"]
+        }
+      }
+    },
+    "pork_kelp_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:pork_kelp_boiled_dumpling"]
+        }
+      }
+    },
+    "pork_potato_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:pork_potato_boiled_dumpling"]
+        }
+      }
+    },
+    "pork_fennel_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:pork_fennel_boiled_dumpling"]
+        }
+      }
+    },
+    "tomato_egg_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:tomato_egg_boiled_dumpling"]
+        }
+      }
+    },
+    "beef_tomato_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:beef_tomato_boiled_dumpling"]
+        }
+      }
+    },
+    "mutton_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:mutton_boiled_dumpling"]
+        }
+      }
+    },
+    "chicken_mushroom_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:chicken_mushroom_boiled_dumpling"]
+        }
+      }
+    },
+    "cod_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:cod_boiled_dumpling"]
+        }
+      }
+    },
+    "salmon_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:salmon_boiled_dumpling"]
+        }
+      }
+    },
+    "eggplant_egg_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:eggplant_egg_boiled_dumpling"]
+        }
+      }
+    },
+    "mushroom_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:mushroom_boiled_dumpling"]
+        }
+      }
+    },
+    "fungus_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:fungus_boiled_dumpling"]
+        }
+      }
+    },
+    "calamari_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:calamari_boiled_dumpling"]
+        }
+      }
+    },
+    "garlic_chive_egg_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:garlic_chive_egg_boiled_dumpling"]
+        }
+      }
+    },
+    "dandelion_leaf_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:dandelion_leaf_boiled_dumpling"]
+        }
+      }
+    },
+    "pufferfish_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:pufferfish_boiled_dumpling"]
+        }
+      }
+    },
+    "rabbit_meat_boiled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:rabbit_meat_boiled_dumpling"]
+        }
+      }
+    },
+    "pork_carrot_wonton": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:pork_carrot_wonton"]
+        }
+      }
+    },
+    "pork_mushroom_wonton": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:pork_mushroom_wonton"]
+        }
+      }
+    },
+    "pork_cabbage_wonton": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["dumplings_delight:pork_cabbage_wonton"]
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["pork_cabbage_boiled_dumpling"],
+    ["pork_kelp_boiled_dumpling"],
+    ["pork_potato_boiled_dumpling"],
+    ["pork_fennel_boiled_dumpling"],
+    ["tomato_egg_boiled_dumpling"],
+    ["beef_tomato_boiled_dumpling"],
+    ["mutton_boiled_dumpling"],
+    ["chicken_mushroom_boiled_dumpling"],
+    ["cod_boiled_dumpling"],
+    ["salmon_boiled_dumpling"],
+    ["eggplant_egg_boiled_dumpling"],
+    ["mushroom_boiled_dumpling"],
+    ["fungus_boiled_dumpling"],
+    ["calamari_boiled_dumpling"],
+    ["garlic_chive_egg_boiled_dumpling"],
+    ["dandelion_leaf_boiled_dumpling"],
+    ["pufferfish_boiled_dumpling"],
+    ["rabbit_meat_boiled_dumpling"],
+    ["pork_carrot_wonton"],
+    ["pork_mushroom_wonton"],
+    ["pork_cabbage_wonton"]
+  ]
+}

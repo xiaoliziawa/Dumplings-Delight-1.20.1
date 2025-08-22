@@ -51,6 +51,8 @@
   "dumplings_delight.advancement.get_pufferfish_boiled_dumpling": "Be careful",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling.desc": "Eat a dandelion leaf boiled dumpling",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling": "It's bitter!",
+  "dumplings_delight.advancement.dumpling_king": "Dumpling King",
+  "dumplings_delight.advancement.dumpling_king.desc": "Taste all kinds of dumplings and wontons",
   "effect.dumplings_delight.garlic": "Garlic",
   "effect.dumplings_delight.garlic.description": "Makes dumplings slightly more nourishing"
 }

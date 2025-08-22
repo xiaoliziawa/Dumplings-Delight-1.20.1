@@ -51,6 +51,8 @@
   "dumplings_delight.advancement.get_pufferfish_boiled_dumpling": "Будьте осторожны",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling.desc": "Съешьте вареник с лепестками одуванчика",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling": "Горько!",
+  "dumplings_delight.advancement.dumpling_king": "Пельменный Король",
+  "dumplings_delight.advancement.dumpling_king.desc": "Попробуйте все виды пельменей и вонтонов",
   "effect.dumplings_delight.garlic": "Чеснок",
   "effect.dumplings_delight.garlic.description": "Делает пельмени немного более сытными"
 }
