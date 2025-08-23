@@ -52,5 +52,7 @@
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling.desc": "Eat a dandelion leaf boiled dumpling",
   "dumplings_delight.advancement.consume_dandelion_leaf_boiled_dumpling": "It's bitter!",
   "effect.dumplings_delight.garlic": "Garlic",
-  "effect.dumplings_delight.garlic.description": "Makes dumplings slightly more nourishing"
+  "effect.dumplings_delight.garlic.description": "Makes dumplings slightly more nourishing",
+  "dumplings_delight.advancement.dumpling_king": "Dumpling King",
+  "dumplings_delight.advancement.dumpling_king.desc": "Taste all types of dumplings and wontons"
 }
