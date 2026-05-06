@@ -71,7 +71,7 @@ public class EggplantBlock extends CropBlock {
             int j = 1 + worldIn.getRandom().nextInt(2);
             popResource(worldIn, pos, new ItemStack(ItemRegistry.Eggplant.get(), j));
 
-            worldIn.playSound(null, pos, ModSounds.ITEM_TOMATO_PICK_FROM_BUSH.get(), SoundSource.BLOCKS, 1.0F, 0.8F + worldIn.getRandom().nextFloat() * 0.4F);
+            worldIn.playSound(null, pos, ModSounds.BLOCK_TOMATOES_PICK_TOMATOES.get(), SoundSource.BLOCKS, 1.0F, 0.8F + worldIn.getRandom().nextFloat() * 0.4F);
             worldIn.setBlock(pos, this.getStateForAge(5), 2);
             return InteractionResult.sidedSuccess(worldIn.isClientSide);
         } else {
